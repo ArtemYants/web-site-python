@@ -1,0 +1,35 @@
+name: Deploy Flask to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]  # Запускати, коли ви робите push у гілку main
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install Flask Frozen-Flask
+          # Якщо у вас є файл requirements.txt, замініть рядок вище на:
+          # pip install -r requirements.txt
+
+      - name: Freeze site
+        run: python freeze.py  # Гітхаб сам запустить ваш скрипт
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build  # Гітхаб візьме папку build і зробить її сайтом
+          branch: gh-pages # Створить окрему гілку для готового сайту
