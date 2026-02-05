@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Контакти - Naughty_Dog{% endblock %}
+
+{% block content %}
+<section class="contacts">
+    <h2>Контакти</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1509145.9124368927!2d-119.34153960219216!3d33.73347340647853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb39055993f7%3A0xbc891fc1b60f587a!2sNaughty%20Dog%20LLC!5e0!3m2!1suk!2sca!4v1767904254802!5m2!1suk!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>Маєте питання? Зв'яжіться з нами!</p>
+    <div class="contact-info">
+        <p><strong>Email:</strong> ndi-dog@naughtydog.com</p>
+        <p><strong>Телефон:</strong> +1 (800) 345-7669</p>
+        <p><strong>Адреса:</strong> 2425 Olympic Blvd Ste 3000W, Santa Monica, CA 90404, Сполучені Штати</p>
+    </div>
+    <form class="contact-form">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" placeholder="John Smith" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+        <label for="tel">Телефон:</label>
+        <input type="tel" id="tel" name="tel" placeholder="+1 (534) 629-5682 " required>
+
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" placeholder="Я б хотів вам повідомити що..."></textarea>
+
+        <button type="submit" class="shadow-pop-tr">Надіслати</button>
+    </form>
+    <div>
+        <h3>Слідкуйте за нами в соціальних мережах:</h3>
+        <a href="https://twitter.com/Naughty_Dog"target="_blank"><img class="shadow-pop-tr" data-aos="flip-up" src="https://icon2.cleanpng.com/20180526/kx/avph4jgqd.webp" alt="Twitter" width="50" height="50"></a> 
+        <a href="https://www.facebook.com/NaughtyDog" target="_blank"><img class="shadow-pop-tr" data-aos="flip-up" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/500px-Facebook_Logo_%282019%29.png" alt="Facebook" width="50" height="50"></a> 
+        <a href="https://www.instagram.com/naughtydog/" target="_blank"><img class="shadow-pop-tr" data-aos="flip-up" src="https://img.freepik.com/premium-vector/instagram-vector-logo-icon-social-media-logotype_901408-392.jpg" alt="Instagram" width="50" height="50"></a> 
+        <a href="https://www.youtube.com/user/NaughtyDogInc" target="_blank"><img class="shadow-pop-tr" data-aos="flip-up" src="https://i.pinimg.com/736x/7d/dc/54/7ddc545046b212d9ecc8eef83569222b.jpg" alt="YouTube" width="50" height="50"></a> 
+        <a href="https://www.twitch.tv/naughtydog"target="_blank"><img class="shadow-pop-tr" data-aos="flip-up" src="https://www.citypng.com/public/uploads/preview/hd-twitch-purple-square-app-icon-png-701751695116754rky4piyppq.png" alt="Twitch" width="50" height="50"></a>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Naughty_Dog{% endblock %}</title>
+    <link rel="icon"
+        href="https://city-png.b-cdn.net/thumbnail/thumbnail_public/temp/hd-the-last-of-us-gameplay-logo-transparent-background-701751715773893nws6dllhix.webp?v=2025091300">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="tracking-in-expand ">The Last Of Us</h1>
+                <ul>
+                    <li class="text-shadow-pop-top"><a href="/">Home</a></li>
+                    <li class="text-shadow-pop-top"><a href="/about">About Us</a></li>
+                    <li class="text-shadow-pop-top"><a href="/contacts">Contacts</a></li>
+                    <li class="text-shadow-pop-top"><a href="/mods">Mods</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2025 Naughty_Dog. Всі права захищені.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
