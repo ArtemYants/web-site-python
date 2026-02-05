@@ -1,8 +1,32 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="uk">
 
-{% block title %}Про нас - Naughty_Dog{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас - Naughty_Dog</title>
+    <link rel="icon"
+        href="https://city-png.b-cdn.net/thumbnail/thumbnail_public/temp/hd-the-last-of-us-gameplay-logo-transparent-background-701751715773893nws6dllhix.webp?v=2025091300">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
 
-{% block content %}
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="tracking-in-expand ">The Last Of Us</h1>
+                <ul>
+                    <li class="text-shadow-pop-top"><a href="/">Home</a></li>
+                    <li class="text-shadow-pop-top"><a href="/about">About Us</a></li>
+                    <li class="text-shadow-pop-top"><a href="/contacts">Contacts</a></li>
+                    <li class="text-shadow-pop-top"><a href="/mods">Mods</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        
 <section class="about">
     <h2>Про нас</h2>
     <p>Established in 1984, Naughty Dog is one of the most successful and prolific game development studios in the world and a flagship first-party studio within PlayStation Studios. From creating the iconic Crash Bandicoot and Jak and Daxter series to modern franchises like Uncharted and The Last of Us, Naughty Dog is responsible for some of the most critically acclaimed and commercially successful games on Sony’s PlayStation platforms. Through its use of cutting-edge technology and evocative, character-driven storytelling, Naughty Dog has received hundreds of industry and media awards, while developing a passionate fan base of millions of players around the globe.
@@ -15,4 +39,15 @@ Naughty Dog is a wholly-owned subsidiary of Sony Interactive Entertainment locat
     <img data-aos="fade-up"
      data-aos-duration="3000" src="https://cdn.craft.cloud/22b11234-f633-4f7c-8ac2-099f2dba995c/assets/uploads/20180709_NaughtyDog-031.jpg" alt="About The Last Of Us" class="about-image">
 </section>
-{% endblock %}
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Naughty_Dog. Всі права захищені.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

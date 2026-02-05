@@ -1,4 +1,0 @@
-Flask
-
-# Optional for development:
-# python-dotenv

@@ -1,8 +1,32 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="uk">
 
-{% block title %}Контакти - Naughty_Dog{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Naughty_Dog</title>
+    <link rel="icon"
+        href="https://city-png.b-cdn.net/thumbnail/thumbnail_public/temp/hd-the-last-of-us-gameplay-logo-transparent-background-701751715773893nws6dllhix.webp?v=2025091300">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
 
-{% block content %}
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="tracking-in-expand ">The Last Of Us</h1>
+                <ul>
+                    <li class="text-shadow-pop-top"><a href="/">Home</a></li>
+                    <li class="text-shadow-pop-top"><a href="/about">About Us</a></li>
+                    <li class="text-shadow-pop-top"><a href="/contacts">Contacts</a></li>
+                    <li class="text-shadow-pop-top"><a href="/mods">Mods</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        
 <section class="contacts">
     <h2>Контакти</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1509145.9124368927!2d-119.34153960219216!3d33.73347340647853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb39055993f7%3A0xbc891fc1b60f587a!2sNaughty%20Dog%20LLC!5e0!3m2!1suk!2sca!4v1767904254802!5m2!1suk!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -36,4 +60,15 @@
         <a href="https://www.twitch.tv/naughtydog"target="_blank"><img class="shadow-pop-tr" data-aos="flip-up" src="https://www.citypng.com/public/uploads/preview/hd-twitch-purple-square-app-icon-png-701751695116754rky4piyppq.png" alt="Twitch" width="50" height="50"></a>
     </div>
 </section>
-{% endblock %}
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Naughty_Dog. Всі права захищені.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
