@@ -1,6 +1,10 @@
-# Roblox Site
+# TheLastOfUs site
 
-Це простий веб-сайт про гру Roblox, створений з використанням Flask, HTML та CSS.
+Це простий веб-сайт про гру TheLastOfUs, створений з використанням Flask, HTML та CSS.
+
+<img width="1919" height="1079" alt="Screenshot 2026-02-10 153001" src="https://github.com/user-attachments/assets/63eff83e-ce1e-4274-912b-4fb4150838b8" />
+<img width="1917" height="1078" alt="Screenshot 2026-02-10 152945" src="https://github.com/user-attachments/assets/e86b7084-8ab7-4656-abe9-feecc8d9a5e2" />
+<img width="1919" height="1079" alt="Screenshot 2026-02-10 152859" src="https://github.com/user-attachments/assets/2f48918c-3a42-4ed2-b1e2-f97a9aad5d1a" />
 
 ## Структура проекту
 
